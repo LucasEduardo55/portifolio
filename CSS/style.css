@@ -1,0 +1,136 @@
+:root {
+    --pcarv: #121212;
+    --czclr: #E0E0E0;
+    --czmed: #B0B0B0;
+    --czesc: #444444;
+    --veneon: #00FF85;
+    --azneon: #1E90FF;
+    --fundocard:#f5f5f5;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+    padding-top: 60px;
+}
+
+body.escuro {
+    background-color: #121212;
+    color: var(--czclr);
+    --fundocard: #1B1B1B 
+}
+
+.navbar {
+    background-color: #fff !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #f5f5f5 !important;
+}
+
+body.escuro .navbar {
+    background-color: #212529 !important;
+}
+
+body.escuro .navbar .nav-link,
+body.escuro .navbar .navbar-brand {
+    color: #f5f5f5 !important;
+}
+
+body.escuro .navbar-toggler-icon {
+    filter: invert(1);
+}
+/*Home*/
+#nmLucas {
+    color: #1E90FF;
+}
+/* Sobre Mim */
+
+.main-sm {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.main-sm > h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.main-sm section {
+    margin-bottom: 50px;
+}
+
+.main-sm section h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    width: fit-content;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.main-sm section h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: var(--azneon);
+    border-radius: 5px;
+}
+
+body.escuro .main-sm section h3::after {
+    background-color: var(--veneon);
+    box-shadow: 0 0 10px rgba(0, 255, 133, 0.5);
+}
+
+body.escuro #minhahistoria {
+    color: var(--veneon);
+}
+
+body.escuro #interesses {
+    color: var(--veneon);
+}
+
+body.escuro #aprendizado {
+    color: var(--veneon);
+}
+
+.card-myh,
+.card-interesses,
+.card-aprendizado {
+    background-color: var(--fundocard);
+    padding: 30px;
+    border: 1px solid var(--czmed);
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-myh p,
+.card-interesses p,
+.card-aprendizado p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.card-myh p:last-child,
+.card-interesses p:last-child,
+.card-aprendizado p:last-child {
+    margin-bottom: 0;
+}
+
+.card-myh:hover,
+.card-interesses:hover,
+.card-aprendizado:hover {
+    transform: translateY(-4px);
+    border-color: var(--azneon);
+    box-shadow: 0 5px 20px rgba(30, 144, 255, 0.12);
+}
+
