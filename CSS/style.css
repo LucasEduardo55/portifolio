@@ -1,0 +1,63 @@
+:root {
+    --pcarv: #121212;
+    --czclr: #E0E0E0;
+    --czmed: #B0B0B0;
+    --czesc: #444444;
+    --veneon: #00FF85;
+    --azneon: #1E90FF;
+    --fundocard:#f5f5f5;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+    padding-top: 60px;
+}
+
+body.escuro {
+    background-color: #121212;
+    color: var(--czclr);
+}
+
+.navbar {
+    background-color: #fff !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #f5f5f5 !important;
+}
+
+body.escuro .navbar {
+    background-color: #212529 !important;
+}
+
+body.escuro .navbar .nav-link,
+body.escuro .navbar .navbar-brand {
+    color: #f5f5f5 !important;
+}
+
+body.escuro .navbar-toggler-icon {
+    filter: invert(1);
+}
+/*Home*/
+#nmLucas {
+    color: #1E90FF;
+}
+/*Sobre Mim*/
+.main-sm {
+    padding: 20px;
+}
+
+body.escuro #minhahistoria {
+    color: var(--veneon);
+}
+
+body.escuro #interesses {
+    color: var(--veneon);
+}
+
+body.escuro #aprendizado {
+    color: var(--veneon);
+}
