@@ -43,6 +43,7 @@ body.escuro .navbar-toggler-icon {
     filter: invert(1);
 }
 /*Home*/
+
 #nmLucas {
     color: #1E90FF;
 }
@@ -134,3 +135,176 @@ body.escuro #aprendizado {
     box-shadow: 0 5px 20px rgba(30, 144, 255, 0.12);
 }
 
+/* Carreira */
+
+.main-car {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.main-car > h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.main-car section {
+    margin-bottom: 50px;
+}
+
+.main-car section h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    width: fit-content;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.main-car section h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: var(--azneon);
+    border-radius: 5px;
+}
+
+body.escuro .main-car section h3::after {
+    background-color: var(--veneon);
+    box-shadow: 0 0 10px rgba(0, 255, 133, 0.5);
+}
+
+body.escuro #formacao,
+body.escuro #cursocert,
+body.escuro #habtec {
+    color: var(--veneon);
+}
+
+.dev-car,
+.habilidades {
+    background-color: var(--fundocard);
+    padding: 30px;
+    border: 1px solid var(--czmed);
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.titulo-dev {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.texto-dev,
+.texto-habtec {
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.dev-car:hover,
+.habilidades:hover {
+    transform: translateY(-4px);
+    border-color: var(--azneon);
+    box-shadow: 0 5px 20px rgba(30, 144, 255, 0.12);
+}
+
+#bronze-est,
+#prata-est,
+#prata-nac {
+    height: 400px;
+    width: auto;
+}
+ /* Contato */
+.main-ctt {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.btn-success {
+    background-color: var(--azneon);
+    border-color: var(--azneon);
+    color: #121212;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.main-ctt {
+    max-width: 1200px;
+    margin: 120px auto 0;
+    padding: 30px 25px;
+}
+
+.card-ctt {
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.github-ctt,
+.email-ctt {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.github-ctt {
+    border-color: var(--azneon);
+}
+
+.email-ctt {
+    border-color: #0D6EFD;
+}
+
+.github-ctt h4,
+.email-ctt h4 {
+    margin-bottom: 15px;
+}
+
+.github-ctt p,
+.email-ctt p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.github-ctt .btn,
+.email-ctt .btn {
+    min-width: 200px;
+}
+
+.github-ctt .btn-outline-primary,
+.email-ctt .btn-outline-primary {
+    --bs-btn-color: #0D6EFD;
+    --bs-btn-border-color: #0D6EFD;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0D6EFD;
+    --bs-btn-hover-border-color: #0D6EFD;
+}
+
+@media (max-width: 768px) {
+    .card-ctt {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .github-ctt,
+    .email-ctt {
+        padding: 25px;
+    }
+
+    .main-ctt h1 {
+        font-size: 2rem;
+    }
+
+    .main-ctt br {
+        display: none;
+    }
+}
