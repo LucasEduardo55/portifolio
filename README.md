@@ -10,7 +10,7 @@ A identidade visual segue uma proposta moderna, com tema escuro, cores neon e el
 
 ## Acesso ao Projeto
 
-- **Site publicado:** [Acessar Portfólio] lucassouzaportfolio.vercel.app
+- **Site publicado:** [Acessar Portfólio] https://lucassouzaportfolio.vercel.app
 - **Repositório no GitHub:** [Visualizar Código] https://github.com/LucasEduardo55
 
 ## Tecnologias Utilizadas
